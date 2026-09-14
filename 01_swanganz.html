@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Swan-Ganz漂浮导管放置</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            display: flex; 
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+        .container { width: 100%; max-width: 800px; padding: 20px; }
+        h1 { color: #fff; text-align: center; margin-bottom: 20px; font-size: 20px; }
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            background: #000;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+        }
+        video {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            object-fit: contain;
+        }
+        .tip { color: #888; text-align: center; margin-top: 15px; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Swan-Ganz漂浮导管放置</h1>
+        <div class="video-wrapper">
+            <video controls playsinline webkit-playsinline preload="metadata" poster="">
+                <source src="https://github.com/bozhuluo/hemodynamic-videos/releases/download/v1.0/01_swanganz.mp4" type="video/mp4">
+                您的浏览器不支持视频播放
+            </video>
+        </div>
+        <p class="tip">点击播放按钮开始观看 | 血流动力学监测教学视频</p>
+    </div>
+</body>
+</html>
